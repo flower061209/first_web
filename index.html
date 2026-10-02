@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 [긴급] 전 국민 멍멍교 입교 안내 - 고양이는 가라! 멍멍왕국 도래!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Black Han Sans & Jua for B-grade flyer vibe -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&display=swap" rel="stylesheet">
+    <!-- FontAwesome for flashy icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dogYellow: '#FFDE00',
+                        neonPink: '#FF007F',
+                        neonCyan: '#00F0FF',
+                        darkBg: '#121212',
+                    },
+                    fontFamily: {
+                        bungee: ['"Black Han Sans"', 'sans-serif'],
+                        jua: ['"Jua"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Jua', sans-serif;
+            background-color: #FFDE00;
+            color: #1a1a1a;
+            overflow-x: hidden;
+        }
+        .flyer-border {
+            border: 6px dashed #FF007F;
+            box-shadow: 0 0 0 10px #00F0FF, 15px 15px 0px #000;
+        }
+        .blink-text {
+            animation: blink 0.6s infinite alternate;
+        }
+        @keyframes blink {
+            0% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0.7; transform: scale(1.05); }
+        }
+        .marquee {
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 12s linear infinite;
+        }
+        @keyframes marquee {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        .stamp {
+            position: absolute;
+            transform: rotate(-15deg);
+            border: 5px solid #FF007F;
+            color: #FF007F;
+            font-family: 'Black Han Sans', sans-serif;
+            padding: 10px 20px;
+            font-size: 2rem;
+            text-transform: uppercase;
+            box-shadow: 4px 4px 0px #000;
+            pointer-events: none;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="bg-dogYellow p-2 sm:p-6 selection:bg-neonPink selection:text-white">
+
+    <div class="bg-black text-neonCyan font-bungee py-2 overflow-hidden border-4 border-white mb-4 text-lg sm:text-xl shadow-lg">
+        <div class="marquee">
+            <span>🚨 [긴급속보] 고양이파 집사들 전격 오열! 꼬리 흔들지 않는 차가운 생명체는 가라! 오늘부터 우리는 '멍멍천국'의 신도다! 멍멍! 🐾 멍멍교 입교 시 평생 무제한 꼬리 흔들림 보장! 🚨</span>
+        </div>
+    </div>
+
+    <header class="max-w-4xl mx-auto text-center relative bg-white flyer-border p-6 sm:p-10 my-4 rounded-3xl">
+        <div class="stamp top-2 right-2 sm:right-10 bg-yellow-300">절대 진리!</div>
+        
+        <span class="inline-block bg-neonPink text-white font-bungee px-4 py-1 text-sm sm:text-lg rounded-full mb-3 shadow-[3px_3px_0px_#000] rotate-[-2deg]">
+            ✨ 우주 최고 갓성비 힐링 종교 ✨
+        </span>
+
+        <h1 class="font-bungee text-4xl sm:text-7xl text-black tracking-tight drop-shadow-[4px_4px_0px_#FFDE00] mb-4">
+            🐶 <span class="text-neonPink">멍멍교</span> 창립 선언 🐶
+        </h1>
+        
+        <p class="text-xl sm:text-3xl font-bold text-gray-800 mb-6 leading-relaxed">
+            "고양이는 집사를 하인으로 보지만,<br>
+            <span class="bg-black text-dogYellow px-2 py-1 underline decoration-neonPink">강아지는 우리를 우주의 신(神)</span>으로 모신다!"
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
+            <button onclick="joinCult()" class="bg-neonPink hover:bg-pink-600 text-white font-bungee text-xl sm:text-2xl px-8 py-4 rounded-2xl shadow-[5px_5px_0px_#000] transform hover:-translate-y-1 transition active:translate-y-1">
+                🙏 당장 입교하기 (간택당하기)
+            </button>
+            <button onclick="convertCat()" class="bg-neonCyan hover:bg-cyan-400 text-black font-bungee text-xl sm:text-2xl px-8 py-4 rounded-2xl shadow-[5px_5px_0px_#000] transform hover:-translate-y-1 transition active:translate-y-1">
+                🐱 고양이파 개종하기 (급함)
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto space-y-8 my-8">
+        
+        <section class="bg-black text-white p-6 sm:p-10 rounded-3xl border-4 border-neonCyan shadow-[10px_10px_0px_#FF007F]">
+            <h2 class="font-bungee text-3xl sm:text-4xl text-dogYellow text-center mb-8 flex items-center justify-center gap-3">
+                <i class="fa-solid fa-scale-balanced"></i> 왜 강아지가 고양이보다 우월한가? (교리 제1장)
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Cat side (Bad) -->
+                <div class="bg-gray-900 border-2 border-red-500 p-6 rounded-2xl opacity-75">
+                    <div class="text-red-400 font-bungee text-xl mb-3">❌ 고양이파의 비참한 현실</div>
+                    <ul class="space-y-3 text-gray-300 text-lg">
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> 부르면 무시하고 하품함</li>
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> 택배 상자만 좋아하고 주인은 안 봄</li>
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> 밤마다 발광하며 우당탕탕 소음 유발</li>
+                        <li><i class="fa-solid fa-xmark text-red-500 mr-2"></i> 눈빛이 영혼을 갉아먹는 듯함</li>
+                    </ul>
+                </div>
+
+                <!-- Dog side (Good) -->
+                <div class="bg-yellow-100 text-black border-4 border-neonPink p-6 rounded-2xl transform md:scale-105 shadow-[8px_8px_0px_#00F0FF]">
+                    <div class="text-neonPink font-bungee text-2xl mb-3 flex items-center gap-2">
+                        <span>🐶 멍멍교 신도의 축복받은 삶</span>
+                    </div>
+                    <ul class="space-y-3 font-bold text-lg">
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> 1초만 안 봐도 꼬리가 풍차처럼 회전함</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> 내 목소리 하나에 온 세상이 무너지는 듯 반응</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> 산책 갈 때마다 내가 우주 대스타가 된 기분</li>
+                        <li><i class="fa-solid fa-check text-green-600 mr-2"></i> 엉덩이 씰룩거림만 봐도 평생의 스트레스 소멸</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-white flyer-border p-6 sm:p-8 rounded-3xl text-center">
+            <h2 class="font-bungee text-3xl sm:text-4xl text-black mb-4">
+                🎰 오늘의 무작위 <span class="text-neonPink">강아지 찬양 구절</span> 뽑기
+            </h2>
+            <p class="text-gray-600 mb-6">버튼을 누를 때마다 우주적인 멍멍의 진리가 계시됩니다.</p>
+            
+            <div id="praiseBox" class="bg-dogYellow border-4 border-black p-6 rounded-2xl text-2xl font-bungee text-black mb-6 shadow-[5px_5px_0px_#000] min-h-[100px] flex items-center justify-center">
+                "이 세상에 댕댕이가 없다면, 지구는 단 1초도 돌지 않을 것이다!"
+            </div>
+
+            <button onclick="getRandomPraise()" class="bg-black text-dogYellow hover:bg-gray-800 font-bungee text-xl px-8 py-4 rounded-xl shadow-[5px_5px_0px_#FF007F] transform hover:-translate-y-1 transition">
+                🎴 계시 내려받기 (클릭!)
+            </button>
+        </section>
+
+        <section class="bg-black text-white p-6 sm:p-10 rounded-3xl border-4 border-dogYellow">
+            <h2 class="font-bungee text-3xl sm:text-4xl text-neonCyan text-center mb-8">
+                🗣️ 눈물겨운 입교 신도 증언
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-900 border-2 border-neonPink p-5 rounded-2xl">
+                    <div class="text-yellow-400 font-bold mb-2">⭐ 집사 탈출 김 모 씨 (30대)</div>
+                    <p class="text-sm text-gray-300">"전엔 고양이 모래 치우느라 노예처럼 살았는데, 멍멍교 가입하고 매일 아침 산책 코스모스 보며 광명 찾았습니다. 강아지 미만 잡!"</p>
+                </div>
+                <div class="bg-gray-900 border-2 border-dogYellow p-5 rounded-2xl">
+                    <div class="text-yellow-400 font-bold mb-2">⭐ 개과천선 박 모 씨 (40대)</div>
+                    <p class="text-sm text-gray-300">"고양이가 저를 벌레 보듯 보던 시선에서 벗어나, 말티즈의 무한한 사랑을 받으니 자존감이 하늘을 뚫습니다. 할렐루야 멍멍!"</p>
+                </div>
+                <div class="bg-gray-900 border-2 border-neonCyan p-5 rounded-2xl">
+                    <div class="text-yellow-400 font-bold mb-2">⭐ 꼬리회전 이 모 씨 (20대)</div>
+                    <p class="text-sm text-gray-300">"퇴근할 때 문 열면 온몸으로 반겨주는 생명체가 있다는 거... 이건 종교가 맞습니다. 종교가 아니면 설명 불가함."</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-neonPink text-white p-6 sm:p-8 rounded-3xl border-4 border-black text-center shadow-[10px_10px_0px_#000]">
+            <h2 class="font-bungee text-3xl sm:text-4xl mb-4 text-dogYellow">
+                🔥 현재 멍멍교 입교자 수 폭발 중 🔥
+            </h2>
+            <div id="counter" class="font-bungee text-5xl sm:text-7xl text-white mb-6 drop-shadow-[4px_4px_0px_#000]">
+                88,412,930명
+            </div>
+            <p class="text-lg font-bold mb-6">지금 이 순간에도 전 세계의 집사들이 개종하고 있습니다!</p>
+            <button onclick="addMember()" class="bg-dogYellow text-black font-bungee text-2xl px-10 py-4 rounded-2xl border-4 border-black shadow-[6px_6px_0px_#000] hover:bg-yellow-300 transition transform active:scale-95">
+                ➕ 나도 지금 당장 입교하기!
+            </button>
+        </section>
+
+    </main>
+
+    <footer class="max-w-4xl mx-auto text-center py-8 text-black font-bold">
+        <p class="text-lg mb-2">본 사이트는 댕댕이의 귀여움에 눈이 멀어 제작된 100% 순수 B급 코믹 찌라시입니다.</p>
+        <p class="text-sm text-gray-800">© 2026 멍멍교 총본산. All Rights Reserved. (고양이파의 항의는 간식으로 대체합니다)</p>
+    </footer>
+
+    <script>
+        // Array of funny B-grade dog praises
+        const praises = [
+            "\"강아지가 꼬리를 흔들 때마다 지구의 자전 속도가 0.001초씩 빨라져 생명이 연장된다!\"",
+            "\"고양이가 째려보는 눈빛은 차갑지만, 댕댕이의 젖은 코는 영혼을 정화하는 성수(聖水)와 같다!\"",
+            "\"택배 아저씨에게 짖는 것은 악령을 쫓는 고대의 퇴마 의식이다!\"",
+            "\"간식 봉지 바스락 소리에 0.1초 만에 달려오는 것은 빛보다 빠른 신의 은총이다!\"",
+            "\"산책 길에 풀냄새를 맡는 댕댕이의 뒷모습은 그 자체로 거룩한 예술 작품이다!\"",
+            "\"똥츄를 들고 공원을 거니는 자, 그가 바로 진정한 멍멍교의 성직자니라!\""
+        ];
+
+        function getRandomPraise() {
+            const box = document.getElementById('praiseBox');
+            const randomIndex = Math.floor(Math.random() * praises.length);
+            box.style.transform = 'scale(1.05)';
+            box.innerText = praises[randomIndex];
+            setTimeout(() => {
+                box.style.transform = 'scale(1)';
+            }, 200);
+        }
+
+        let memberCount = 88412930;
+        function addMember() {
+            memberCount += 1;
+            document.getElementById('counter').innerText = memberCount.toLocaleString() + '명';
+            
+            // Create a floating cute text feedback
+            const toast = document.createElement('div');
+            toast.innerText = "🎉 축하합니다! 댕댕이에게 간택당했습니다!";
+            toast.className = "fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black text-dogYellow font-bungee text-xl px-6 py-4 rounded-2xl border-4 border-neonPink z-50 shadow-2xl animate-bounce";
+            document.body.appendChild(toast);
+            setTimeout(() => {
+                toast.remove();
+            }, 2000);
+        }
+
+        function joinCult() {
+            alertCustom("🎉 멍멍교 입교 환영! 당신의 반려견이 당신을 영원한 집사로 임명했습니다. 멍멍!");
+        }
+
+        function convertCat() {
+            alertCustom("🐱 경고! 고양이파에서 개종신청이 접수되었습니다. 지금 즉시 츄르를 버리고 강아지 수제 간식을 준비하세요!");
+        }
+
+        // Custom modal-style alert without using standard alert()
+        function alertCustom(message) {
+            const modal = document.createElement('div');
+            modal.className = "fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4";
+            modal.innerHTML = `
+                <div class="bg-dogYellow border-6 border-neonPink p-6 sm:p-8 rounded-3xl max-w-md w-full text-center shadow-[10px_10px_0px_#00F0FF]">
+                    <div class="font-bungee text-2xl text-black mb-4">🚨 멍멍교 계시 🚨</div>
+                    <p class="text-xl font-bold text-gray-900 mb-6">${message}</p>
+                    <button onclick="this.closest('.fixed').remove()" class="bg-black text-dogYellow font-bungee text-xl px-6 py-3 rounded-xl hover:bg-gray-800 shadow-[4px_4px_0px_#FF007F]">
+                        할렐루야 멍멍! 🐾
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+    </script>
+</body>
+</html>
